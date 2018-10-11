@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MainPage</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            /* width:100px; */
+            background :lightgray;
+        }
+        #main{
+            margin: 15% 35%;
+            width: 30%;
+            padding: 50px;      
+        }
+        .but{
+           background-color:rgb(46, 78, 13);
+           border:1px;
+           color: white;
+           padding: 12px 10px;
+           text-align: center;
+           text-decoration: none;
+           border-radius: 5px;
+           display: inline-block;
+           font-size: 16px;
+           margin: 4px 2px;
+           cursor: pointer;
+        }
+        .but:hover{
+            background-color: tomato;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div>
+            <h1>Entry System</h1>
+        </div>
+        <div id="btn-body">
+            <!-- <form action="http://localhost:3000/add"  >
+                <button class="but">Add Entry</button>
+            </form>
+            <form action="http://localhost:3000/display" >
+                <button class="but">Display Entry</button>
+            </form> -->
+            <a href="http://localhost:3000/add" class="but">AddEntry</a>
+            <a href="http://localhost:3000/display" class="but">ShowEntry</a>
+        </div>
+        
+    </div>
+
+</body>
+</html>
+
+<!-- 
+/* #container-body{
+    align: center;
+    text-align: center;
+
+} */ -->

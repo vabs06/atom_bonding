@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student data</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .data{
+            display: grid;
+            /* grid-template-columns: repeat(6, 2fr 2fr 2fr); */
+            grid-gap: 1em;
+            
+        }
+        .data >tr{
+            background:gainsboro;
+            padding: 2px;
+        }
+        .data >tr:nth-child(odd){
+            background: slategray;
+            padding: 2px;
+        }
+        .data > td:nth-child(even){
+            column-gap: 2px;
+            column-width: 10px;
+            text-indent: inherit;
+
+
+        }
+        thead{
+            display: grid;
+            display: inline-block;
+            grid-template-columns: repeat(3, 4fr 2fr 2fr);
+            padding: 1px 10px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <table class>
+         <thead class="">
+            <tr>
+                 <td><strong>RollNo</strong></td>
+                 <td><strong>Name</strong></td>
+                 <td>FatherName</td>
+                 <td>Family</td>
+                 <td>Age</td>
+                 <td>Contact</td>
+            </tr>
+         </thead>
+         <tbody class="data">
+             <% items.forEach((item)=>{ %> 
+             <tr>
+                 <td><%= item.rollno %></td>
+                 <td><%= item.first %></td>
+                 <td><%= item.fname %></td>
+                 <td><%= item.family %></td>
+                 <td><%= item.age %></td>
+                 <td><%= item.contact %></td>
+             </tr>
+             <% });%>
+         </tbody>
+    </table>
+</body>
+</html>

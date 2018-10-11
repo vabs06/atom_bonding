@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .wrapper{
+            display: grid;
+            /* grid-column-gap: 0.5em; */
+            /* grid-template-columns: repeat(3, 1fr); */
+            grid-gap:0.25em; 
+            grid-auto-rows: 50px;
+        }
+        .wrapper > div{
+           padding :1em;
+           background: #eee;
+        }
+        .wrapper > div:nth-child(even){
+            background: #ddd ;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </div>
+        <div>
+            Nam voluptatibus accusamus ab deserunt autem maxime distinctio
+        </div>
+        <div>
+            doloribus facere repellendus. Dolores sit dolor eius vitae sunt
+        </div>
+        <div>
+            possimus aut odit, error nostrum!
+        </div>
+
+    </div>
+</body>
+</html>
